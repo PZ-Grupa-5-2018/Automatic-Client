@@ -1,6 +1,6 @@
 # Automatic-Client
 
-parameters:
+parameters:\
 "-me", "--measurement" - type of measurement, e.g. "TestCPU"\
 "-a", "--active" - flag used to choose only active monitors, non obligatory, default: active = True\
 "-na", "--noactive" - flag used to choose not only active monitors, non obligatory, default: active = True\
