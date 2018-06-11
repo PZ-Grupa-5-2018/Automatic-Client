@@ -27,9 +27,11 @@ try:
                 hosts_data.append(host)
             top_hosts = sorted(hosts_data,key=lambda k: k['load'], reverse=True)
         os.system('clear')
+        print("{:<20}{:<20}{:<20}".format('HOST', 'IP', args.measurement))
         for top_host in top_hosts[0:10]:
-            print("Host: %s, load: %s" % (top_host['name'], top_host['load']))
+            print("{:<20}{:<20}{:<20}".format(top_host['name'], top_host['ip'], top_host['load']))
         time.sleep(5)
 except KeyboardInterrupt:
     os.system('clear')
     exit()
+
