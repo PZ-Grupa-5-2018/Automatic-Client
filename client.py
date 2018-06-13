@@ -37,7 +37,7 @@ try:
         print("{:<20}{:<20}{:<20}".format('HOST', 'IP', args.measurement))
         for top_host in top_hosts[0:args.nhosts]:
             print("{:<20}{:<20}{:<20}".format(top_host['name'], top_host['ip'], top_host['load']))
-        time.sleep(5)
+        time.sleep(1)
 except KeyboardInterrupt:
     if platform.system() == 'Linux':
         os.system('clear')
